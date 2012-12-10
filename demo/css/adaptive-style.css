@@ -1,0 +1,139 @@
+/*!
+ * Form-BP Adaptive Version v1.0
+ *
+ * Copyright (c) 2012 Brett Jankord, http://www.brettjankord.com
+ * Licensed under the MIT license
+ */
+
+body{
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+/* Forms
+------------------------------------------*/
+.form-container{
+	border: 1px solid #999;
+	margin-bottom: 2em;
+	padding:20px 15px 0;
+	max-width:860px;
+	width:860px\9; /* IE8 and below */ 
+}
+	
+
+/* Formatting
+------------------------------------------*/
+form ul, form li{ list-style: none; margin: 0; padding: 0;}
+form > ul > li{border-top: 1px solid #ccc; margin: 1em 0 0; padding: 1em 0 0;}
+form > ul > li:first-child{border-top: none; margin: 0; padding: 0;}
+
+
+/* Labels, Notes
+--------------------------------------*/
+label {
+	display: block;
+	_display: block; /* Fix for IE6 */ 
+	font-size: 13px; 
+	font-weight: bold; 
+	padding: 0 .5em .3em 0;
+}
+
+label.stack{display:block; text-align:left; width:auto;}
+.form-note{ color:#666; display: block; font-size: .85em; font-weight: normal;}
+
+
+/* Text Inputs, Selects, Textareas
+------------------------------------------*/
+/* NOTE: If you are using any HTML5 inputs other than the ones below, you'll need to add the selectors for them */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+textarea, 
+select {
+	border: 1px solid #ccc;
+	font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin:0;
+	outline: 0;
+	padding: 4px;
+	width: 210px;
+	/*
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	*/
+}
+
+select {margin:0; padding:3px; width: 220px;} /* 10px wider than text inputs */
+select {*margin:1px 0 0; }/* Fix for IE7 */
+textarea {min-height: 80px; padding:.5%; width:99%;}
+
+
+/* :Focus
+------------------------------------------*/
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus, 
+textarea:focus {
+	border: 1px solid #88a7c0;
+	-webkit-box-shadow: 0 0 4px #ccdfed;
+	-moz-box-shadow: 0 0 4px #ccdfed; 
+	box-shadow: 0 0 4px #ccdfed;
+}
+
+/* Checkboxes, Radio Buttons
+------------------------------------------*/
+fieldset{ border:0;display: inline; margin: 0; padding: 0; }
+fieldset label{display: inline; font-weight: normal; vertical-align: middle; width: auto;}
+
+
+/* Form Validation
+------------------------------------------*/
+label em, label.required:before, div.error{color: #C00;}
+label em, label.required:before{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif; 
+	font-size:1.1em; font-style: normal;
+}
+
+label.required:before {content: "* ";}
+
+/* Error message */
+div.error{clear:both; font-size:.9em; font-style:italic; padding:5px 0 0;}
+
+
+/* Form Columns
+------------------------------------------*/
+.form-col, .form-col li{
+	display:inline-block;
+	zoom: 1;
+	*display: inline;
+	vertical-align: top;
+}
+
+.form-col li{padding: .4em  1em .4em 0;}
+.form-col label, .form-col select{width: auto;}
+
+
+/* IE6
+------------------------------------------*/
+.lt-ie7 form ul li{padding-bottom: 1em;}
+.lt-ie7 form ul li li{padding-bottom: 0;}
+.lt-ie7 label{display: block;}
+
+
+/* Large Viewports
+--------------------------------------*/
+@media (min-width:600px){
+
+	label{display: inline-block; vertical-align: top; width: 200px;}
+	.form-col li{padding: 0 .7em 0 0;}
+}
+
+/* IE8 & lower MQ styles copied from above */
+.lt-ie9 label{display: inline-block; vertical-align: top; width: 200px;}
+/* Other fixes for IE8 & lower */
+.lt-ie9 label.stack{display:block; text-align:left; width:auto;}
+.lt-ie9 fieldset label{display: inline; vertical-align: middle; width: auto;}
