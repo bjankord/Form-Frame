@@ -9,6 +9,8 @@ If you don't have any need for multiple fields on the same row, you can remove t
 
 Form Up has been built so that it is easy customize so you use just the CSS you need for your forms.
 
+It's also been designed to work with [jQuery Validation](https://github.com/jzaefferer/jquery-validation). I've include some sample JS files to demo how it can be used with jQuery Validation.
+
 It currently comes in two flavors, a **fixed width layout** and an **adaptive layout**.
 
 ## Fixed Width Version
@@ -47,3 +49,4 @@ The apadtive version has been tested and works in the following browsers/devices
 * Opera Mobile
 * Firefox Mobile
 * Chrome for Android
+
