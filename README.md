@@ -1,13 +1,11 @@
-Form Up
-=======
+Form Frame
+==========
 
-Form Up is a HTML/CSS form boilerplate used to structure forms and makes creating custom forms quick and easy.
+Form Frame is a HTML/CSS framework used to help make creating custom forms quick and easy. It adds structure and lets you frame up forms without limiting how you actually design the form elements like buttons and inputs.
 
-Form Up has been designed so you can remove the parts that you don't need.
-If your form doesn't have checkboxes or radio buttons, you can remove the styles for them from the CSS.
-If you don't have any need for multiple fields on the same row, you can remove the Form Column styles, etc. 
-
-Form Up has been built so that it is easy customize so you use just the CSS you need for your forms.
+Form Frame has been designed so that it is easy customize so you can use just the CSS you need for your forms.
+If your form doesn't have checkboxes or radio buttons, you can remove those styles and move on.
+Use the parts you need, and delete the rest. If you find out you do need styles for radio buttons later on, its easy to copy and paste back in those styles.
 
 It's also been designed to work with [jQuery Validation](https://github.com/jzaefferer/jquery-validation). I've include some sample JS files to demo how it can be used with jQuery Validation.
 
